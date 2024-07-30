@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="#" class="navbar-logo">MyPortfolio</a>
+                <button class="navbar-toggle" onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#study-history">My Study History</a></li>
+                <li><a href="#activity">Activity</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Welcome Note Section -->
+    <section id="home" class="welcome-section">
+        <div class="welcome-container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I am an engineering student still pursuing my studies. This portfolio showcases my academic journey, projects, and extracurricular activities. Feel free to explore and reach out if you have any questions or opportunities!</p>
+        </div>
+    </section>
+    
+    <!-- About Me Section -->
+    <section id="about-me" class="about-me-section">
+        <div class="about-me-container">
+            <img src="varun.jpeg" alt="Profile Picture" class="profile-pic">
+            <div class="about-me-content">
+                <h2>About Me</h2>
+                <p>Hi, I'm Varun, an engineering student currently pursuing my degree in B.Tech in Electronics and communication. I have a passion for Analogue circuits and PCB design, and I'm constantly looking to learn and grow in my field.</p>
+                <p>In my free time, I enjoy Playing badminton and table tennis, helping people, learning about new technology's, listening songs and travelling and photography, which helps me maintain a healthy work-life balance.</p>
+                <p>Here are some of my key skills:</p>
+                <ul class="skills-list">
+                    <li>Python</li>
+                    <li>Data structure and algorithm in java</li>
+                    <li>Circuit design</li>
+                    <li>Matlab</li>
+                    <li>Embedded system</li>
+                    <li>Image processing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Study History Section -->
+    <section id="study-history" class="study-history-section">
+        <div class="study-history-container">
+            <h2>My Study History</h2>
+            <div class="study-history-cards">
+               
+                <div class="study-card">
+                    <h3>PRESIDENCY UNIVERSITY, BANGALORE</h3>
+                    <p><strong>Year of Study:</strong> 2023-Present</p>
+                    <p><strong>CGPA:</strong>7.89</p>
+                </div>
+                <div class="study-card">
+                    <h3>Sahakari Vidya Kendra Polytechnic, Bangalore</h3>
+                    <p><strong>Year of Study:</strong> 2022</p>
+                    <p><strong>Grade:</strong> First class</p>
+                </div>
+                <div class="study-card">
+                    <h3>Sirsi Lions Schools & PU college, Sirsi</h3>
+                    <p><strong>Year of Study:</strong> 2017</p>
+                    <p><strong>Grade:</strong> C+</p>
+                </div>
+                <!-- Add more study cards as needed -->
+            </div>
+        </div>
+    </section>
+
+<!-- Activity/Achievements Section -->
+<section id="activity" class="activity-section">
+    <div class="activity-container">
+        <h2>Activity/Achievements</h2>
+        <div class="activity-cards">
+            <!-- Achievement Card 1 -->
+            <div class="activity-card">
+                
+                <p><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=bbca81ad-d238-4694-9eb0-bf9bdde5a46e&" target="_blank">MATLAB Fundamentals</a></p>
+            </div>
+            <!-- Project Card -->
+
+            <div class="activity-card">
+                
+                <p><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=1d22f961-0a69-4a0f-8162-f73a05ce5720&" target="_blank">MATLAB Onramp</a></p>
+            </div>
+            
+            <!-- Achievement Card 2 -->
+            <div class="activity-card">
+                <b><p>Certifications recieved by INFOSYS on various courses</p></b>
+                <p>Python programming</p>
+                <p>Data structure and algorithm in java</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2>Contact</h2>
+        <div class="contact-details">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>varubhat345@gmail.com
+                </span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>8105973671
+                </span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <span><a href="https://www.linkedin.com/in/varun-gangadhar-bhat-932449317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">@VarunBhat</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-instagram"></i>
+                <span><a href="https://www.instagram.com/varunbhat87?igsh=bnh1dTUxOGkzcWkz" target="_blank">@VarunBhat</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Sirsi, Uttara Kannada-581402</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.navbar-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+/* General styling for the page */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    padding-top: 0px; /* To ensure content is not hidden behind the fixed navbar */
+    background-color: #b1cbec; /* Lighter background color */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333; /* Darker shade for the navbar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #1e90ff; /* Teal color for the logo */
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px; /* Space between menu items */
+}
+
+.navbar-menu li {
+    margin: 0;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar link hover transition */
+.navbar-menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    color: #1e90ff; /* Teal color on hover */
+}
+
+/* Navbar Toggle Button Styling */
+.navbar-toggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    color: #1e90ff; /* Teal color for the toggle button */
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Card hover effect */
+.study-card, .activity-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.study-card:hover, .activity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Welcome section styling */
+.welcome-section {
+    background-color: #e6ecf4;
+    border-radius: 20px 20px 60px 60px;
+    padding: 50px 40px;
+    color: #272424;
+    text-align: center;
+    position: relative;
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 2px; /* Space below the section */
+}
+
+.welcome-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.welcome-container p {
+    font-size: 1.6em;
+    line-height: 1.4;
+    word-wrap: break-word; /* Prevent text overflow */
+}
+
+/* About Me section styling */
+.about-me-section {
+    background-color: #e6ecf4;
+    border-radius: 60px 60px 20px 20px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.about-me-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-me-content {
+    text-align: left;
+}
+
+.about-me-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-me-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.skills-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border-left: 5px solid #3b99f8; /* Teal accent for skills list */
+}
+
+.about-me-content em {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* My Study History section styling */
+.study-history-section {
+    background-color: #e6ecf4;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.study-history-container {
+    max-width: 800px; /* Adjusted max-width */
+    margin: 0 auto;
+}
+
+.study-history-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.study-history-cards {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 10px; /* Reduced space between the cards */
+}
+
+.study-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; /* Full width */
+    text-align: left;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.study-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #519ce8; /* Teal color for card titles */
+}
+
+.study-card p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* Activity/Achievements section styling */
+.activity-section {
+    background-color: #e6ecf4;
+    border-radius: 20px 20px 60px 60px;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.activity-container {
+    max-width: 800px; /* Adjusted max-width */
+    margin: 0 auto;
+}
+
+.activity-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+    word-wrap: break-word; /* Prevent text overflow */
+}
+
+.activity-cards {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 10px; /* Reduced space between the cards */
+}
+
+.activity-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; /* Full width */
+    text-align: left;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.activity-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #519ce8; /* Teal color for card titles */
+}
+
+.activity-card p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* Contact section styling */
+.contact-section {
+    background-color: #e6ecf4;
+    border-radius: 60px 60px 0 0;
+    padding: 60px 40px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px; /* Adjusted max-width */
+    margin: 0 auto;
+}
+
+.contact-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between the items */
+    align-items: center; /* Center items horizontally */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contact-item i {
+    font-size: 1.5em;
+    color: #1e90ff; /* Teal color for icons */
+}
+
+.contact-item a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #333;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-menu {
+        display: none; /* Hide menu by default */
+        width: 100%;
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .navbar-menu li {
+        margin: 10px 0; /* Space between menu items */
+    }
+
+    .navbar-toggle {
+        display: block; /* Show toggle button on smaller screens */
+    }
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 480px) {
+    .welcome-container h1 {
+        font-size: 2em;
+    }
+
+    .welcome-container p {
+        font-size: 1.4em;
+    }
+
+    .about-me-content h2 {
+        font-size: 2em;
+    }
+
+    .about-me-content p {
+        font-size: 1em;
+    }
+
+    .study-card, .activity-card {
+        padding: 15px;
+    }
+
+    .study-card h3, .activity-card h3 {
+        font-size: 1.5em;
+    }
+
+    .study-card p, .activity-card p {
+        font-size: 1em;
+    }
+
+    .contact-item {
+        font-size: 1em;
+    }
+
+    .contact-item i {
+        font-size: 1.2em;
+    }
+}
